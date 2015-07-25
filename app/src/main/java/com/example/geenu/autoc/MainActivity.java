@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         t1=(AutoCompleteTextView)findViewById(R.id.at);
         String list[] = {"apple", "Sony", "Samsung", "Hp", "Dell" , "Toshiba"};
         
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.select_dialog_item, list);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
 
         t1.setThreshold(1);
         t1.setAdapter(adapter);
