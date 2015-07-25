@@ -7,19 +7,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
 
     AutoCompleteTextView t1;
+    TextView t;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        t= (TextView) findViewById(R.id.textView);
         t1=(AutoCompleteTextView)findViewById(R.id.at);
-        String list[] = {"asd", "shj", "sfd", "hhj", "dhjg" , "tyiy"};
+        String list[] = {"apple", "Sony", "Samsung", "Hp", "Dell" , "Toshiba"};
         
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.select_dialog_item, list);
 
